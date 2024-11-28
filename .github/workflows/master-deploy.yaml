@@ -90,13 +90,13 @@ jobs:
         package: '.'
 
 # Krok deploymentu na produkcję
-  release-to-prod:
-    name: Release to prod
-    needs: deploy-to-stage
-    runs-on: ubuntu-latest
-    environment:
-      name: 'Production'
-      url: 'https://${{ env.WEBAPP_NAME }}.azurewebsites.net/'
+  # release-to-prod:
+  #   name: Release to prod
+  #   needs: deploy-to-stage
+  #   runs-on: ubuntu-latest
+  #   environment:
+  #     name: 'Production'
+  #     url: 'https://${{ env.WEBAPP_NAME }}.azurewebsites.net/'
 
 # Ponowne zalogowanie do Azure
 #     steps:
