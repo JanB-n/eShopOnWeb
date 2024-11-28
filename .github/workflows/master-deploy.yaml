@@ -86,7 +86,7 @@ jobs:
       with: 
         app-name: ${{ env.WEBAPP_NAME }}
         slot-name:  ${{ env.SLOT_NAME }}
-        publish-profile: ${{ secrets.azureWebAppPublishProfile }}
+        publish-profile: ${{ secrets.azureWebAppPublishProfile_staging }}
         package: '.'
 
 # Krok deploymentu na produkcję
